@@ -1,7 +1,7 @@
 # ProgrammingConcepts
 A combination of theory from various sources and code from Leetcode, Hackerrank, etc. that attempts to explain various data structure and algorithmic concepts of computer science using C#.
 
-<details><summary>Leetcode Problems</summary>
+<details><summary>Leetcode Problems
 <p>
 |#|Title |Test Cases Passed|Difficulty Level|
 |-------|-----------------------|-----------------------|-----------------------|
@@ -15,6 +15,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |8|[String to Integer(atoi)](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/StringToInt.cs)|ALL|Medium|
 |9|[Palindrome Number](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/PalindromeNumber.cs)|ALL|Easy|
 |10|[Regular Expression Matching](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/RegularExpressionMatching.cs)|(358 / 445)|Hard|
+ </summary>
  </p>
 </details>
 
