@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DataStructureConcepts.Leetcode
+namespace Leetcode
 {
     /*
     Given an integer, convert it to a roman numeral.

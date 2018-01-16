@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Text.RegularExpressions;
 
-namespace DataStructureConcepts.Leetcode
+namespace Leetcode
 {
     [TestClass]
     public class ValidNumber

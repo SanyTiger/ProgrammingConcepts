@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DataStructureConcepts.Leetcode
+namespace Leetcode
 {
     /*
     Given a 32-bit signed integer, reverse digits of an integer.
@@ -33,35 +33,32 @@ namespace DataStructureConcepts.Leetcode
     }
     public static class ReverseIntegerSolution
     {
-        public static long Reverse(int x)
+        public static int Reverse(int x)
         {
-            var isNeg = false;
-            if (x < 0)
-                isNeg = true;
-            if (isNeg)
-            {
-                var rev = isPalindrome((x - x) - x);
-                return -rev;
-            }
-            else
-                return isPalindrome(x);
-        }
-        public static long isPalindrome(int n)
-        {
-            if (Math.Ceiling(Math.Log10(n)) >= 10)
+            var reverseInt = 0;
+            if (x > Int32.MaxValue || x < Int32.MinValue)
                 return 0;
+            else if (x < 0)
+                reverseInt = isPalindrome(-x, true);
+            else if (x < 10 && x >= 0)
+                reverseInt = x;
             else
+                reverseInt = isPalindrome(x, false);
+            return reverseInt;
+        }
+        public static int isPalindrome(int x, bool isNeg)
+        {
+            var rev = 0.0;
+            var i = x.ToString().Length - 1;
+            while (x != 0)
             {
-                var m = n;
-                long sum = 0;
-                while (m > 0)
-                {
-                    int r = m % 10;
-                    sum = 10 * sum + r;
-                    m = m / 10;
-                }
-                return sum;
+                rev += Math.Pow(10, i) * (x % 10);
+                x /= 10;
+                i--;
             }
+            if (rev > Int32.MaxValue || rev < Int32.MinValue)
+                return 0;
+            return isNeg == true ? Convert.ToInt32(-rev) : Convert.ToInt32(rev);
         }
     } 
 }

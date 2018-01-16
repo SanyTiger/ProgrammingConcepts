@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Text.RegularExpressions;
 
-namespace Leetcode
+namespace RegularExpression
 {
     /*
      * Test Cases: 358 / 445

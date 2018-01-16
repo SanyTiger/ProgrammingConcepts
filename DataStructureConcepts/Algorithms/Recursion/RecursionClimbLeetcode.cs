@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Leetcode
+namespace Recursion
 {
     /*
     You are climbing a stair case. It takes n steps to reach to the top.

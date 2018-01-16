@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DataStructureConcepts.Leetcode
+namespace Leetcode
 {
     /*
     Determine whether an integer is a palindrome.Do this without extra space.

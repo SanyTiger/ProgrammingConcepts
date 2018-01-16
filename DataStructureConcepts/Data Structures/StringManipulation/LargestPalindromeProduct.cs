@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Leetcode
+namespace StringManipulation
 {
     /*
     Find the largest palindrome made from the product of two n-digit numbers.

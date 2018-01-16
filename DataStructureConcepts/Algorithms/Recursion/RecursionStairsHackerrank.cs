@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Hackerrank
+namespace Recursion
 {
     /*
     Consider a staircase of size n=4:

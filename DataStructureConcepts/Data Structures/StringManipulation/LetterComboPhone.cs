@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
-namespace Leetcode
+namespace StringManipulation
 {
     [TestClass]
     public class LetterComboPhone
@@ -24,7 +24,7 @@ namespace Leetcode
                 char temp = digits[i];
                 arrLetter[i] = GetLetter(temp - 48);
             }
-            
+
             if (digits.Length == 1)
             {
                 var letter = arrLetter[0];

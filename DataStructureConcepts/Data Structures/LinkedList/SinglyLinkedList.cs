@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DataStructureConcepts.LinkedList
+namespace LinkedList
 {
     [TestClass]
     public class SinglyLinkedList

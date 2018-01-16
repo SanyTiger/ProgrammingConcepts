@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace DataStructureConcepts.Leetcode
+namespace Leetcode
 {
     /*
     Divide two integers without using multiplication, division and mod operator.

@@ -1,7 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
-namespace Leetcode
+namespace DynamicProgramming
 {
     /*
     * Test Cases: 548/1520
@@ -12,10 +12,10 @@ namespace Leetcode
         [TestMethod]
         public void TestMethod1()
         {
-            var sol = new EditDistanceSolution();
+
         }
     }
-    public class EditDistanceSolution
+    public class EditDistanceSolutionDynamic
     {
         public int MinDistance(string word1, string word2)
         {
@@ -47,7 +47,7 @@ namespace Leetcode
                         // Replace  = d[i - 1, j - 1]
                         // Cost is assumed to be '1' for all operations
                         else
-                            arrDynamicCost[i, j] = 1 + Math.Min(arrDynamicCost[i, j - 1], 
+                            arrDynamicCost[i, j] = 1 + Math.Min(arrDynamicCost[i, j - 1],
                                 (Math.Min(arrDynamicCost[i - 1, j], arrDynamicCost[i - 1, j - 1])));
 
                         /*

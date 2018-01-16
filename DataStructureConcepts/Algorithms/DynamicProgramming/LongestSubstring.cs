@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
 
-namespace Leetcode
+namespace DynamicProgramming
 {
     /*
      * Test Cases: 473/983
