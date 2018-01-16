@@ -14,6 +14,20 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |8|[String to Integer(atoi)](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/StringToInt.cs)|ALL|Medium|
 |9|[Palindrome Number](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/PalindromeNumber.cs)|ALL|Easy|
 |10|[Regular Expression Matching](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/RegularExpressionMatching.cs)|(358 / 445)|Hard|
-
+|11|Container With Most Water|NA|Medium|	
+|12|[Integer to Roman](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/IntToRoman.cs)|ALL|Medium|
+|13|Roman to Integer|NA|Easy|
+|14|Longest Common Prefix|NA|Easy|
+|15|[3Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/ThreeSum.cs)|52/313|Medium|
+|16|3Sum Closest|NA|Medium|
+|17|[Letter Combinations of a Phone Number](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/LetterComboPhone.cs) |12/25|Medium|
+|18|4Sum|NA|Medium|
+|19|Remove Nth Node From End of List|NA|Medium|
+|20|Valid Parentheses|NA|Easy|
+|21|Merge Two Sorted Lists|NA|Easy|
+|22|Generate Parentheses|NA|Medium|
+|23|[Merge k Sorted Lists](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MergeKSortedList.cs)|108/130|Hard|
+|24|Swap Nodes in Pairs|NA|Medium|
+|25|Reverse Nodes in k-Group|NA|Hard|
 
 
