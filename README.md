@@ -2,7 +2,6 @@
 A combination of theory from various sources and code from Leetcode, Hackerrank, etc. that attempts to explain various data structure and algorithmic concepts of computer science using C#.
 
 <details>Leetcode Problems
-<p>
 |#|Title |Test Cases Passed|Difficulty Level|
 |-------|-----------------------|-----------------------|-----------------------|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|Easy|
@@ -15,7 +14,6 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |8|[String to Integer(atoi)](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/StringToInt.cs)|ALL|Medium|
 |9|[Palindrome Number](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/PalindromeNumber.cs)|ALL|Easy|
 |10|[Regular Expression Matching](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/RegularExpressionMatching.cs)|(358 / 445)|Hard|
- </p>
 </details>
 
 
