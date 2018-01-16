@@ -3,6 +3,6 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Leetcode Problems
 
-|   #   |         Title         |   Test Cases Passed   |   Difficulty Level    |
+|#|Title |Test Cases Passed|Difficulty Level|
 |-------|-----------------------|-----------------------|-----------------------|
-|   1   |    [Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)      |         ALL           |         Easy          | 
+|1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL| Easy| 
