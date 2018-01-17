@@ -9,6 +9,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Leetcode Problems
 
+|https://placehold.it/15/f08c15/000000?text=+|Easy||https://placehold.it/15/f08c15/000000?text=+|Medium||https://placehold.it/15/f08c15/000000?text=+|Hard|
 |#|Title |Test Cases Passed|Difficulty Level|
 |-|------|-----------------|----------------|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|Easy|
