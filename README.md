@@ -1,21 +1,11 @@
 # ProgrammingConcepts
 
 A combination of theory from various sources and code from Leetcode, Hackerrank, etc. that attempts to explain various data structure and algorithmic concepts of computer science using C#.
-<br/>
-<div align="right">
-    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#programmingconcepts">↥ back to top</a></b>
-</div>
-<br/>
 
 # List Of Various Branches
 
 |[Data Structures](https://github.com/SanyTiger/ProgrammingConcepts#data-structures)|[Algorithms](https://github.com/SanyTiger/ProgrammingConcepts#algorithms)|[Leetcode](https://github.com/SanyTiger/ProgrammingConcepts#leetcode-problems)|[Hackerrank](https://github.com/SanyTiger/ProgrammingConcepts#hackerrank-problems)|
 |---------------|----------|--------|----------|
-<br/>
-<div align="right">
-    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#list-of-various-branches">↥ back to top</a></b>
-</div>
-<br/>
 
 # Leetcode Problems
 
@@ -96,7 +86,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 <br/>
 <div align="right">
-    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#leetcode-problems">↥ back to top</a></b>
+    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#list-of-various-branches">↥ back to top</a></b>
 </div>
 <br/>
 
@@ -104,7 +94,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 <br/>
 <div align="right">
-    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#data-structures">↥ back to top</a></b>
+    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#list-of-various-branches">↥ back to top</a></b>
 </div>
 <br/>
 
@@ -112,6 +102,6 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 <br/>
 <div align="right">
-    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#algorithms">↥ back to top</a></b>
+    <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#list-of-various-branches">↥ back to top</a></b>
 </div>
 <br/>
