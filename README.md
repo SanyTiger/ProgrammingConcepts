@@ -92,10 +92,10 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Data Structures
 
-|#|Data Structure|Operations|Media|
-|-|--------------|----------|-----|
-|1|Singly LinkedList|a. ||
-|||b. ||
+|#|Data Structure|#|Operations|Media|
+|-|--------------|-|----------|-----|
+|1|Singly LinkedList|i|||
+|||ii|||
 
 <br/>
 <div align="right">
