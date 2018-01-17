@@ -1,5 +1,5 @@
 # ProgrammingConcepts
-![#f03c15](https://placehold.it/15/f03c15/000000?text=+)exampol
+
 A combination of theory from various sources and code from Leetcode, Hackerrank, etc. that attempts to explain various data structure and algorithmic concepts of computer science using C#.
 
 # List Of Various Branches
