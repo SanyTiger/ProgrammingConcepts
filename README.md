@@ -19,7 +19,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |2|[Add Two Numbers](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/AddTwoNumbersInLinkedList.cs)|1560/1562|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|
 |3|[Longest Substring Without Repeating Characters](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/LongestSubstring.cs)|473/983|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|
-|4|[Median of Two Sorted Arrays](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MedianOfTwoSortedArrays.cs)|ALL|![#f01c15](https://placehold.it/15/f01c15/000000?text=+)|
+|4|[Median of Two Sorted Arrays](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MedianOfTwoSortedArrays.cs)|ALL|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
 |5|[Longest Palindromic Substring](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/LongestPalindromeSubstring.cs)|48/92|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|
 |6|ZigZag Conversion|NA|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|
 |7|[Reverse Integer](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/ReverseInteger.cs)|ALL|![#c1f015](https://placehold.it/15/c1f015/000000?text=+)|
