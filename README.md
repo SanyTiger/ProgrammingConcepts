@@ -9,11 +9,6 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Leetcode Problems
 
-|Colour|Level|Colour|Level|Colour|Level|
-|:----:|-----|:----:|-----|:----:|-----|
-|![#c1f015](https://placehold.it/15/c1f015/000000?text=+)|Easy|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|Medium|![#f01c15](https://placehold.it/15/f01c15/000000?text=+)|Hard|
-
-
 |#|Title |Test Cases Passed|Difficulty|
 |-|------|-----------------|:--------:|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
@@ -72,7 +67,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |54|Spiral Matrix|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |55|Jump Game|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |56|Merge Intervals|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
-|57|Insert Interval|NA|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hate.png)|
+|57|Insert Interval|NA|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
 |58|Length of Last Word|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |59|Spiral Matrix II|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |60|Permutation Sequence|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)	
