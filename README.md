@@ -91,6 +91,8 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Data Structures
 
+![TimeComplexity](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Data%20Structures/Time%20Complexity.PNG)
+
 |#|Data Structure|#|Operations|Media|
 |-|--------------|-|----------|-----|
 |1|Singly LinkedList|i|||
