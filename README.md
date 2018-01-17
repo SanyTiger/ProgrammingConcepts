@@ -15,7 +15,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 
 |#|Title |Test Cases Passed|Difficulty|
-|-|------|-----------------|----------|
+|-|------|-----------------|:--------:|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|![#c1f015](https://placehold.it/15/c1f015/000000?text=+)|
 |2|[Add Two Numbers](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/AddTwoNumbersInLinkedList.cs)|1560/1562|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|
 |3|[Longest Substring Without Repeating Characters](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/LongestSubstring.cs)|473/983|![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|
