@@ -9,8 +9,8 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Leetcode Problems
 
-|#|Title |Test Cases Passed|Difficulty|
-|-|------|-----------------|:--------:|
+|#|Title |Test Cases Passed|Difficulty|Media|
+|-|------|-----------------|:--------:|-----|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |2|[Add Two Numbers](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/AddTwoNumbersInLinkedList.cs)|1560/1562|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |3|[Longest Substring Without Repeating Characters](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/LongestSubstring.cs)|473/983|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
@@ -82,7 +82,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |69|Sqrt(x)|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |70|[Climbing Stairs](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/ClimbStairs.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |71|Simplify Path|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
-|72|[Edit Distance](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/EditDistance.cs)|548/1520|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
+|72|[Edit Distance](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/EditDistance.cs)|548/1520|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|[Image](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Algorithms/DynamicProgramming/EditDistance.JPG)|
 
 <br/>
 <div align="right">
