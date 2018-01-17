@@ -6,6 +6,11 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 |[Data Structures](https://github.com/SanyTiger/ProgrammingConcepts#data-structures)|[Algorithms](https://github.com/SanyTiger/ProgrammingConcepts#algorithms)|[Leetcode](https://github.com/SanyTiger/ProgrammingConcepts#leetcode-problems)|[Hackerrank](https://github.com/SanyTiger/ProgrammingConcepts#hackerrank-problems)|
 |---------------|----------|--------|----------|
+<br/>
+<div align="right">
+    <b><a href="#----">↥ back to top</a></b>
+</div>
+<br/>
 
 # Leetcode Problems
 
