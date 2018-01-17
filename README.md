@@ -1,16 +1,13 @@
 # ProgrammingConcepts
-=====================
 
 A combination of theory from various sources and code from Leetcode, Hackerrank, etc. that attempts to explain various data structure and algorithmic concepts of computer science using C#.
 
 # List Of Various Branches
-=====================
 
 |[Data Structures](https://github.com/SanyTiger/ProgrammingConcepts#data-structures)|[Algorithms](https://github.com/SanyTiger/ProgrammingConcepts#algorithms)|[Leetcode](https://github.com/SanyTiger/ProgrammingConcepts#leetcode-problems)|[Hackerrank](https://github.com/SanyTiger/ProgrammingConcepts#hackerrank-problems)|
 |---------------|----------|--------|----------|
 
 # Leetcode Problems
-=====================
 
 |#|Title |Test Cases Passed|Difficulty Level|
 |-|------|-----------------|----------------|
