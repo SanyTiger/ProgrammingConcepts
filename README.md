@@ -1,10 +1,5 @@
 # ProgrammingConcepts
 
-```diff
-+ this will be highlighted in green
-- this will be highlighted in red
-```
-
 A combination of theory from various sources and code from Leetcode, Hackerrank, etc. that attempts to explain various data structure and algorithmic concepts of computer science using C#.
 
 # List Of Various Branches
