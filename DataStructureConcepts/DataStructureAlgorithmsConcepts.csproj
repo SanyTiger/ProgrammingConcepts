@@ -63,11 +63,11 @@
     <Compile Include="Data Structures\PointsToRemember.cs" />
     <Compile Include="Algorithms\Recursion\RecursionClimbLeetcode.cs" />
     <Compile Include="Algorithms\Recursion\RecursionStairsHackerrank.cs" />
-    <Compile Include="Data Structures\StringManipulation\LargestPalindromeProduct.cs" />
-    <Compile Include="Data Structures\StringManipulation\LetterComboPhone.cs" />
-    <Compile Include="Data Structures\StringManipulation\LongestSubstring.cs" />
-    <Compile Include="Data Structures\RegularExpression\RegularExpressionMatching.cs" />
-    <Compile Include="Data Structures\StringManipulation\StringToInt.cs" />
+    <Compile Include="Algorithms\StringManipulation\LargestPalindromeProduct.cs" />
+    <Compile Include="Algorithms\StringManipulation\LetterComboPhone.cs" />
+    <Compile Include="Algorithms\StringManipulation\LongestSubstring.cs" />
+    <Compile Include="Algorithms\RegularExpression\RegularExpressionMatching.cs" />
+    <Compile Include="Algorithms\StringManipulation\StringToInt.cs" />
     <Compile Include="Hackerrank\Pairs.cs" />
     <Compile Include="Hackerrank\PlusMinus.cs" />
     <Compile Include="Hackerrank\Staircase.cs" />
