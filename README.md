@@ -9,8 +9,8 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Leetcode Problems
 
-|Colour|Level| |Colour|Level| |Colour|Level|
-|------|-----|-|------|-----|-|------|-----|
+|Colour|Level|Colour|Level|Colour|Level|
+|:----:|-----|------|-----|------|-----|
 |![#c1f015](https://placehold.it/15/c1f015/000000?text=+)|Easy| |![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|Medium| |![#f01c15](https://placehold.it/15/f01c15/000000?text=+)|Hard|
 
 
