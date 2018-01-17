@@ -104,6 +104,8 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Algorithms
 
+![TimeComplexity](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Algorithms/Time%20Complexity.PNG)
+
 <br/>
 <div align="right">
     <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#list-of-various-branches">↥ back to top</a></b>
