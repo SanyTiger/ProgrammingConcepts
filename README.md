@@ -9,10 +9,10 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 
 # Leetcode Problems
 
-https://placehold.it/15/f08c15/000000?text=+
 |Colour|Level| |Colour|Level| |Colour|Level|
 |------|-----|-|------|-----|-|------|-----|
 |![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|Easy| |![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|Medium| |![#f08c15](https://placehold.it/15/f08c15/000000?text=+)|Hard|
+
 
 |#|Title |Test Cases Passed|Difficulty Level|
 |-|------|-----------------|----------------|
