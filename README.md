@@ -33,7 +33,7 @@ A combination of theory from various sources and code from Leetcode, Hackerrank,
 |20|Valid Parentheses|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |21|Merge Two Sorted Lists|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |22|Generate Parentheses|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
-|23|[Merge k Sorted Lists](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MergeKSortedList.cs)|108/130|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
+|23|[Merge k Sorted Lists](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MergeKSortedList.cs)|108/130|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|[![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)|
 |24|Swap Nodes in Pairs|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |25|Reverse Nodes in k-Group|NA|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
 |26|Remove Duplicates from Sorted Array|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
