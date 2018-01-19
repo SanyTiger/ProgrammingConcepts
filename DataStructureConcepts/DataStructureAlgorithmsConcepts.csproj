@@ -55,25 +55,29 @@
     <Compile Include="Algorithms\DynamicProgramming\EditDistance.cs" />
     <Compile Include="Algorithms\DynamicProgramming\LongestPalindromeSubString.cs" />
     <Compile Include="Algorithms\DynamicProgramming\LongestSubstring.cs" />
-    <Compile Include="Data Structures\LinkedList\AddTwoNumbers.cs" />
-    <Compile Include="Data Structures\LinkedList\ListNode.cs" />
+    <Compile Include="Data Structures\LinkedList\Problems\AddTwoNumbers.cs" />
+    <Compile Include="Data Structures\LinkedList\CircularLinkedList.cs" />
+    <Compile Include="Data Structures\LinkedList\DoublyLinkedList.cs" />
+    <Compile Include="Data Structures\LinkedList\Problems\ListNode.cs" />
     <Compile Include="Data Structures\LinkedList\SinglyLinkedList.cs" />
-    <Compile Include="Algorithms\MergeSort\MedianOfTwoSortedArrays.cs" />
-    <Compile Include="Algorithms\MergeSort\MergeKSortedList.cs" />
+    <Compile Include="Algorithms\SearchAndSort\MergeSort\MedianOfTwoSortedArrays.cs" />
+    <Compile Include="Algorithms\SearchAndSort\MergeSort\MergeKSortedList.cs" />
+    <Compile Include="Data Structures\LinkedList\SkipList.cs" />
     <Compile Include="Data Structures\PointsToRemember.cs" />
     <Compile Include="Algorithms\Recursion\RecursionClimbLeetcode.cs" />
     <Compile Include="Algorithms\Recursion\RecursionStairsHackerrank.cs" />
-    <Compile Include="Algorithms\StringManipulation\LargestPalindromeProduct.cs" />
-    <Compile Include="Algorithms\StringManipulation\LetterComboPhone.cs" />
-    <Compile Include="Algorithms\StringManipulation\LongestSubstring.cs" />
-    <Compile Include="Algorithms\RegularExpression\RegularExpressionMatching.cs" />
-    <Compile Include="Algorithms\StringManipulation\StringToInt.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\LargestPalindromeProduct.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\LetterComboPhone.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\LongestSubstring.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\RegularExpressionMatching.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\StringToInt.cs" />
     <Compile Include="Hackerrank\Pairs.cs" />
     <Compile Include="Hackerrank\PlusMinus.cs" />
     <Compile Include="Hackerrank\Staircase.cs" />
     <Compile Include="Leetcode\AddTwoNumbersInLinkedList.cs" />
     <Compile Include="Leetcode\ClimbStairs.cs" />
     <Compile Include="Leetcode\CoinChangeII.cs" />
+    <Compile Include="Leetcode\ContainerWithMostWater.cs" />
     <Compile Include="Leetcode\IntToRoman.cs" />
     <Compile Include="Leetcode\JumpGameII.cs" />
     <Compile Include="Leetcode\LargestPalindromeProduct.cs" />
@@ -92,11 +96,31 @@
     <Compile Include="Leetcode\DivideTwoIntegers.cs" />
     <Compile Include="Leetcode\EditDistance.cs" />
     <Compile Include="Leetcode\ValidNumber.cs" />
+    <Compile Include="Leetcode\ZigZagConversion.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Algorithms\DynamicProgramming\EditDistance.JPG" />
-    <Content Include="Data Structures\LinkedList\SinglyLinkedList.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithms\Backtracking\" />
+    <Folder Include="Algorithms\BitManipulation\" />
+    <Folder Include="Algorithms\DivideAndConquer\" />
+    <Folder Include="Algorithms\Geometric\" />
+    <Folder Include="Algorithms\Greedy\" />
+    <Folder Include="Algorithms\Mathematical\" />
+    <Folder Include="Algorithms\PatternSearching\" />
+    <Folder Include="Data Structures\Array\Problems\" />
+    <Folder Include="Data Structures\BinarySearchTree\Problems\" />
+    <Folder Include="Data Structures\BinaryTree\Problems\" />
+    <Folder Include="Data Structures\Graph\Problems\" />
+    <Folder Include="Data Structures\Hashing\Problems\" />
+    <Folder Include="Data Structures\Heap\Problems\" />
+    <Folder Include="Data Structures\Matrix\Problems\" />
+    <Folder Include="Data Structures\n-aryTreeAndLCA\Problems\" />
+    <Folder Include="Data Structures\Queue\Problems\" />
+    <Folder Include="Data Structures\Stack\Problems\" />
+    <Folder Include="Data Structures\Trie\Problems\" />
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
