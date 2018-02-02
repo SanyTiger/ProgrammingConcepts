@@ -89,8 +89,10 @@
     <Compile Include="Leetcode\PalindromeNumber.cs" />
     <Compile Include="Leetcode\RegularExpressionMatching.cs" />
     <Compile Include="Leetcode\ReverseInteger.cs" />
+    <Compile Include="Leetcode\RomanTolnt.cs" />
     <Compile Include="Leetcode\SinglyLinkedList.cs" />
     <Compile Include="Leetcode\StringToInt.cs" />
+    <Compile Include="Leetcode\SubstringWithConcatOfAllWords.cs" />
     <Compile Include="Leetcode\ThreeSum.cs" />
     <Compile Include="Leetcode\TwoSum.cs" />
     <Compile Include="Leetcode\DivideTwoIntegers.cs" />

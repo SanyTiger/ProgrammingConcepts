@@ -1,9 +1,11 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Linq;
+
 /*
-* Test Cases: 52/313
-*/
+ * Test Cases: 226 / 313
+ */
 namespace Leetcode
 {
     /*
@@ -21,41 +23,85 @@ namespace Leetcode
     */
 
     [TestClass]
-    public static class ThreeSum
+    public class ThreeSum
     {
         [TestMethod]
-        public static void TestMethod1()
+        public void TestMethod1()
         {
-
+            var nums = new int[] { 0, 3, 0, 1, 1, -1, -5, -5, 3, -3, -3, 0 };
+            var sol = new ThreeSumSolution().ThreeSum(nums);
+            var result = sol;
         }
     }
-    public static class ThreeSumSolution
+    public class ThreeSumSolution
     {
-        public static IList<IList<int>> ThreeSum(int[] nums)
+        public IList<IList<int>> ThreeSum(int[] nums)
         {
-            var lstSolution = new List<IList<int>>();
-            var lstArray = new List<int>();
-            for (int i = 0; i < nums.Length - 2; i++)
-            {
-                lstArray.Clear();
-                lstArray.Add(nums[i]);
-                for (int j = (i + 1); j < nums.Length; j++)
-                {
-                    lstArray.Add(nums[j]);
-                    if (lstArray.Count == 3)
-                    {
-                        if (lstArray[0] + lstArray[1] + lstArray[2] == 0)
-                        {
-                            if (!lstSolution.Contains(lstArray))
-                                lstSolution.Add(new List<int> { lstArray[0], lstArray[1], lstArray[2] });
-                        }
+            var lstCombo = new List<IList<int>>();
+            var lstNum = new List<int>();
+            var dicNum = new Dictionary<int, int>();
+            var tempNum = new Dictionary<int, int>();
+            var len = nums.Length;
+            var pos = 0;
+            var onePos = pos + 1;
+            var zeroCount = 0;
 
-                        lstArray.RemoveAt(2);
-                        lstArray.RemoveAt(1);
+            lstCombo.Clear();
+
+            if (len == 0 || len == 1 || len == 2)
+                return lstCombo;
+            for (int i = 0; i < len; i++)
+            {
+                if (nums[i] == 0)
+                    ++zeroCount;
+                dicNum.Add(i, nums[i]);
+            }
+            if (zeroCount == len)
+                lstCombo.Add(new List<int> { 0, 0, 0 });
+            else
+            {
+                while (pos < len && onePos < len)
+                {
+                    var diff = 0;
+                    tempNum.Clear();
+                    tempNum = tempNum.Concat(dicNum).ToDictionary(x => x.Key, x => x.Value);
+                    if (onePos + 1 == len)
+                    {
+                        ++pos;
+                        onePos = pos + 1;
+                        continue;
                     }
+                    diff = diff - nums[pos] - nums[onePos];
+                    tempNum.Remove(pos);
+                    tempNum.Remove(onePos);
+                    if (tempNum.ContainsValue(diff))
+                    {
+                        lstNum.Add(nums[pos]);
+                        lstNum.Add(nums[onePos]);
+                        lstNum.Add(diff);
+                        lstNum.Sort();
+                        // Check for duplicates
+                        if (!IsDuplicate(lstNum, lstCombo))
+                            lstCombo.Add(new List<int> { lstNum[0], lstNum[1], lstNum[2] });
+                        lstNum.Clear();
+                    }
+                    else if (onePos + 1 == len)
+                        ++pos;
+                    ++onePos;
                 }
             }
-            return lstSolution;
+            return lstCombo;
+        }
+        public bool IsDuplicate(List<int> lstNum, List<IList<int>> lstCombo)
+        {
+            var isTrue = false; 
+            for(int i = 0; i < lstCombo.Count; i++)
+            {
+                var combo = lstCombo[i];
+                if (!combo.Except(lstNum).Any()) // Broken library: [0, 0, 0] and [-1, 0, 1] is the same, apparently.
+                    isTrue = true;
+            }
+            return isTrue;
         }
     }
 }
