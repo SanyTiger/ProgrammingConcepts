@@ -1,5 +1,7 @@
 # Awesome Leetcode Problem Solutions (C#)
 
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+
 A curated list of awesome solutions to problems from [LeetCode.com](https://leetcode.com/problemset/all/) 
 Special thanks to [GeekForGeeks.com](https://www.geeksforgeeks.org/) for all the helpful videos and notes to solve these problems.
 
