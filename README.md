@@ -1,5 +1,6 @@
 # Awesome C# Leetcode Probelm Solutions
 ----
+A curated list of awesome solutions to problems from Leetcode.com 
 
 # Leetcode Problems
 
