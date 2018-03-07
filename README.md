@@ -1,6 +1,12 @@
 # Awesome C# Leetcode Probelm Solutions
 ----
-A curated list of awesome solutions to problems from Leetcode.com 
+A curated list of awesome solutions to problems from [LeetCode.com](https://leetcode.com/problemset/all/) 
+Special thanks to [GeekForGeeks.com](https://www.geeksforgeeks.org/) for all the helpful videos and notes to solve these problems.
+
+# Word of caution
+----
+This is just my attempt to solve the various problems from [LeetCode.com](https://leetcode.com/problemset/all/) and it is far from perfect and would need optimizing to reduce the complexities, but it's a start.
+All code is in C# only. For now.
 
 # Leetcode Problems
 
