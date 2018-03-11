@@ -12,7 +12,7 @@ All code is in C# only. For now.
 
 # Leetcode Problems
 
-|#|Title |Test Cases Passed|Difficulty|Media|
+|#|Title |Laguage|Test Cases Passed|Difficulty|Media|
 |-|------|-----------------|:--------:|-----|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |2|[Add Two Numbers](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/AddTwoNumbersInLinkedList.cs)|1560/1562|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|[![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/) [![Video](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/video.png)](https://www.youtube.com/watch?v=LLPuC5kWD8U)|
