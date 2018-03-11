@@ -1,4 +1,6 @@
-﻿namespace Leetcode
+﻿using System;
+
+namespace Leetcode
 {
     //Definition for singly-linked list.
     public class ListNode
