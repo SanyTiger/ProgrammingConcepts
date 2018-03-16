@@ -1,4 +1,4 @@
-# Awesome Leetcode Problem Solutions (C#)
+# Awesome Leetcode Problem Solutions in C#
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
@@ -12,7 +12,7 @@ All code is in C# only. For now.
 
 # Leetcode Problems
 
-|#|Title |Test Cases Passed|Difficulty|Media|
+|#|Title|Test Cases Passed|Difficulty|Media|
 |-|------|-----------------|:--------:|-----|
 |1|[Two Sum](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/TwoSum.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |2|[Add Two Numbers](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/AddTwoNumbersInLinkedList.cs)|1560/1562|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|[![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/add-two-numbers-represented-by-linked-lists/) [![Video](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/video.png)](https://www.youtube.com/watch?v=LLPuC5kWD8U)|
@@ -33,10 +33,10 @@ All code is in C# only. For now.
 |17|[Letter Combinations of a Phone Number](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/LetterComboPhone.cs) |ALL|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|[![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/find-possible-words-phone-digits/)|
 |18|4Sum|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |19|[Remove Nth Node From End of List](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/RemoveNthFromEnd.cs)|194/208|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
-|20|Valid Parentheses|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
-|21|Merge Two Sorted Lists|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
+|20|[Valid Parentheses](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/ValidParentheses.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
+|21|[Merge Two Sorted Lists](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MergeTwoLists.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |22|Generate Parentheses|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
-|23|[Merge k Sorted Lists](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MergeKSortedList.cs)|108/130|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|[![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)|
+|23|[Merge k Sorted Lists](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/MergeKSortedList.cs)|ALL|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|[![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/merge-k-sorted-linked-lists/)|
 |24|Swap Nodes in Pairs|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |25|Reverse Nodes in k-Group|NA|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
 |26|Remove Duplicates from Sorted Array|NA|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
@@ -86,8 +86,10 @@ All code is in C# only. For now.
 |70|[Climbing Stairs](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/ClimbStairs.cs)|ALL|![Easy](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Easy.png)|
 |71|Simplify Path|NA|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |72|[Edit Distance](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/EditDistance.cs)|548/1520|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|[![Image](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/Image.jpg)](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Algorithms/DynamicProgramming/EditDistance.JPG) [![GFG](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/GFG.png)](https://www.geeksforgeeks.org/dynamic-programming-set-5-edit-distance/) [![Video](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Pictures/video.png)](https://www.youtube.com/watch?v=Thv3TfsZVpw)|
+|207|[Course Schedule](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/CourseSchedule.cs)|35/42|![Medium](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Medium.png)|
 |564|[Find the Closest Palindrome](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/NearestPalindromic.cs)|143/212|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
-|2000|[BestPathAcrossMatrix](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/BestPathAcrossMatrix.cs)|ALL|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
+|1000|[BestPathAcrossMatrix](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/BestPathAcrossMatrix.cs)|ALL|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
+|1001|[RecurringCharacter](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/RecurringCharacter.cs)|ALL|![Hard](https://github.com/SanyTiger/ProgrammingConcepts/blob/master/DataStructureConcepts/Leetcode/Difficulty/Hard.png)|
 <br/>
 <div align="right">
     <b><a href="https://github.com/SanyTiger/ProgrammingConcepts#list-of-various-branches">↥ back to top</a></b>
