@@ -1,110 +1,95 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-/*
-* Test Cases: 66/92
-*/
+
 namespace Leetcode
 {
+    // Non Recursion Based
     /*
-    Given an array of non-negative integers, you are initially positioned at the first index of the array.
-
-    Each element in the array represents your maximum jump length at that position.
-
-    Your goal is to reach the last index in the minimum number of jumps.
-
-    For example:
-    Given array A = [2, 3, 1, 1, 4]
-
-    The minimum number of jumps to reach the last index is 2. (Jump 1 step from index 0 to 1, then 3 steps to the last index.)
-
-    Note:
-    You can assume that you can always reach the last index.
+     * Test Cases: 46/92 (Failing at { 4, 1, 1, 3, 1, 1, 1 })
     */
 
+    // Recursion Based
+    /*
+     * Test Cases: 71/92 (Time Exceeding)
+     */
+
     [TestClass]
-    public static class JumpGameII
+    public class JumpGameII
     {
         [TestMethod]
-        public static void TestMethod1()
+        public void TestMethod1()
         {
-
+            var arr = new int[] { 4, 1, 1, 3, 1, 1, 1 };
+            var sol = new JumpGameIISolution().Jump(arr);
         }
     }
-    public static class JumpGameIISolution
+    public class JumpGameIISolution
     {
-        public static int Jump(int[] nums)
-        {
-            try
-            {
-                var lastIndex = nums.Length - 1;
-                var jump = 0;
-                var pos = 0;
-                var i = nums[pos];
-                var max = nums[pos] + pos;
-                if (lastIndex == 0)
-                    jump = 0;
-                else if (lastIndex == 1 || i >= lastIndex)
-                    ++jump;
-                else
-                {
-                    while (max < lastIndex)
-                    {
-                        if (lastIndex == 0)
-                            break;
-                        else if ((nums[max] == 0 || nums[max] == 1) && pos != 0)
-                        {
-                            ++max;
-                            ++jump;
-                            if (max == lastIndex && nums[max] == 0 && nums[max - 1] != 0)
-                                break;
-                        }
-                        else if (i >= lastIndex)
-                        {
-                            ++jump;
-                            break;
-                        }
-                        else
-                        {
-                            ++jump;
-                            pos = max < lastIndex ? max == 1 ? max : getBestPos(max, pos, nums) : lastIndex;
-                            i = nums[pos];
-                            max = nums[pos] + pos;
-                        }
-                        jump = max >= lastIndex ? ++jump : jump;
-                    }
-                }
-                return jump;
-            }
-            catch (Exception ex)
-            { throw; }
-        }
-        public static int getBestPos(int max, int pos, int[] nums)
-        {
-            var bestPos = max;
-            var bestValue = nums[max];
-            var highestPos = nums.Length - 1;
 
-            if ((nums.Length - 1) - nums[bestPos] == nums[bestPos])
-                return bestPos;
+        // Recursion Based
+        public int minJump(int[] arr, int low, int high)
+        {
+            if (high == low)
+                return 0;
+            if (arr[low] == 0)
+                return Int32.MaxValue;
+
+            var min = Int32.MaxValue;
+            for (int i = low + 1; i <= high && i <= low + arr[low]; i++)
+            {
+                var jumps = minJump(arr, i, high);
+                if (jumps != Int32.MaxValue && jumps + 1 < min)
+                    min = jumps + 1;
+            }
+            return min;
+        }
+
+        // Non Recursion Base
+        public int Jump(int[] nums)
+        {
+            //return minJump(nums, 0, nums.Length - 1);
+
+            var stepsShort = nums.Length - 1;
+            var leastCount = 9999;
+            if (nums.Length == 0)
+                return 0;
+            if (nums.Length == 1 && nums[0] >= 0)
+                return 0;
+            if (nums.Length == 2)
+                return 1;
             else
             {
-                for (int i = (pos + 1); i <= max; i++)
+                for (int i = 0; i <= stepsShort; i++)
                 {
-                    if (nums[i] > nums[bestPos])
+                    var stepsLeft = stepsShort - nums[i] - i;
+                    var subCount = i + 1;
+                    var j = nums[i];
+                    if (j == stepsShort)
                     {
-                        // check if this current node is better than other nodes by comparing difference of lastIndex position to to current node + value
-                        var newMaxPos = nums[i] + i;
-                        if (newMaxPos < nums.Length - 1)
-                        {
-                            if ((highestPos - (nums[newMaxPos] + newMaxPos)) > (nums[bestPos] + bestPos))
-                                bestPos = newMaxPos;
-                        }
-                        else
-                            bestPos = i;
+                        subCount = i == 0 ? subCount : ++subCount;
+                        if (subCount < leastCount)
+                            leastCount = subCount;
+                        break;
                     }
+                    else if (j < stepsShort)
+                    {
+                        while (j <= stepsLeft)
+                        {
+                            stepsLeft = stepsLeft - nums[j];
+                            j = nums[j];
+                            ++subCount;
+                        }
+                        if (stepsLeft > 0)
+                            subCount += stepsLeft;
+
+                        if (subCount < leastCount)
+                            leastCount = subCount;
+                    }
+                    else
+                        leastCount = subCount;
                 }
-                return bestPos;
             }
+            return leastCount;
         }
     }
 }

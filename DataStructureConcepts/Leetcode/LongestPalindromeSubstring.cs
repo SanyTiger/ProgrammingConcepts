@@ -10,80 +10,44 @@ namespace Leetcode
         [TestMethod]
         public void TestMethod1()
         {
-            //var sol = new LongestPalindromeSubstringSolution();
-            //var str = sol.LongestPalindrome("aaaabaaa");
-            //var boss = str;
+            var sol = new LongestPalindromeSubstringDynamicSolution().LongestPalindrome("aaaabaaa");//aaaabaaa //ccc
+            var result = sol;
         }
     }
-
-    /*
-    * Test Cases = 48/92
-    * */
     #region Non Dynamic Approach
     // Non Dynamic Approach
     public class LongestPalindromeSubstringSolution
     {
         public string LongestPalindrome(string s)
         {
-            var len = s.Length;
-            var i = 0;
-            var lstStr = new List<string>();
-            var newStr = string.Empty;
-            var retStr = string.Empty;
-            var isNew = true;
-
-            if (len == 0 || len == 1 || len == 2 || isPalindrome(ref s, true))
+            var current = 0;
+            var next = current + 1;
+            var max = string.Empty;
+            if (s.Equals(string.Empty))
+                return max;
+            if (s.Length == 1)
                 return s;
-            else
+
+            while (next < s.Length)
             {
-                while (i < len)
+                if (s[current] == s[next])
                 {
-                    if (!newStr.Contains(char.ToString(s[i])))
-                        newStr += char.ToString(s[i]);
-                    else
-                    {
-                        newStr += char.ToString(s[i]);
-                        if (isPalindrome(ref newStr, false))
-                        {
-                            lstStr.Add(newStr);
-                            if (newStr.Length >= retStr.Length)
-                                retStr = newStr;
-                            if (++i < len && char.ToString(s[i]).Equals(char.ToString(s[i / 2])))
-                            {
-                                newStr += char.ToString(s[i]);
-                                isNew = false;
-                            }
-                            else
-                            {
-                                newStr = string.Empty;
-                                isNew = true;
-                            }
-                        }
-                    }
-                    i++;
-                    if(i == len && !isNew && s.Length > lstStr[0].Length)
-                    {
-                        newStr = string.Empty;
-                        i = 0;
-                        s = s.Substring(lstStr[0].Length);
-                        len = s.Length;
-                    }
+                    if (next > max.Length)
+                        max = s.Substring(current, ++next);
+                    s = s.Substring(++current);
+                    current = 0;
+                    next = current + 1;
                 }
+                if(next == s.Length - 1)
+                {
+                    s = s.Substring(++current);
+                    current = 0;
+                    next = current + 1;
+                }
+                else
+                    ++next;
             }
-            return retStr;
-        }
-        public bool isPalindrome(ref string s, bool isIt)
-        {
-            if (!isIt)
-            {
-                while (!char.ToString(s[0]).Equals(char.ToString(s[s.Length - 1])))
-                    s = s.Substring(1);
-            }
-            var originalS = s;
-            var arrS = s.ToCharArray();
-            Array.Reverse(arrS);
-            var reverseS = new string(arrS);
-            return originalS == reverseS ? true : false;
+            return max;
         }
     }
     #endregion
@@ -91,7 +55,32 @@ namespace Leetcode
     #region Dynamic Approach
     public class LongestPalindromeSubstringDynamicSolution
     {
+        public string LongestPalindrome(string s)
+        {
+            if (s.Equals(string.Empty))
+                return s;
+            if (s.Length == 1 || s.Length == 2)
+                return Convert.ToString(s[0]);
 
+            return Long(s, 0, 1, "");
+        }
+        public string Long(string s, int current, int next, string p)
+        {
+
+            if (current == s.Length - 1 && s[current] == p[0])
+                return p + Convert.ToString(s[current]);
+            else if (current >= next)
+                return p;
+            else if (s[current] == s[next])
+            {
+                if (p.Length < s.Substring(current, ++next).Length)
+                    p = s.Substring(current, next);
+
+                return Long(s.Substring(next), 0, 1, p);
+            }
+            else
+                return Long(s, current, ++next, p);
+        }
     }
     #endregion
 }

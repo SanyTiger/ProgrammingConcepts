@@ -40,17 +40,19 @@ namespace Leetcode
                     col = col != 0 ? --col : arrMatrix.GetLength(1) - 1;
                 }
 
-                // Check if tuple below current column != -1 when it's the last column
+                // Check if tuple below current column != -1 when it's NOT the last column
                 else if (down == -1 && col < arrMatrix.GetLength(1) - 1)
                 { visited[row, col + 1] = right; ++col; }
 
+                // Check if tuple below current column != -1 when it's the last column
                 else if (down == -1 && col == arrMatrix.GetLength(1) - 1)
                 { arrMatrix[row, col] = 9999; --col; }
 
-                // Check if tuple beside current row != -1 when it's the last row
+                // Check if tuple beside current row != -1 when it's NOT the last row
                 else if (right == -1 && row < arrMatrix.GetLength(0) - 1)
                 { visited[row + 1, col] = down; ++row; }
 
+                // Check if tuple beside current row != -1 when it's the last row
                 else if (right == -1 && row == arrMatrix.GetLength(0) - 1)
                 { arrMatrix[row, col] = 9999; --row; }
 
@@ -58,9 +60,8 @@ namespace Leetcode
                 else if (down < right && down != -1 && row < arrMatrix.GetLength(0) - 1)
                 { visited[row + 1, col] = down; ++row; }
 
-
                 // Check if right value is lesser than down value and the right value != -1
-                else if (right < down && right != -1 && col < arrMatrix.GetLength(1))
+                else if (right < down && right != -1 && col < arrMatrix.GetLength(1) - 1)
                 { visited[row, col + 1] = right; ++col; }
 
                 // Check if right value != -1 when it's the last row

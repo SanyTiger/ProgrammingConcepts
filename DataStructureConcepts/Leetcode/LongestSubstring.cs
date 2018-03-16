@@ -4,18 +4,14 @@ using System.Collections.Generic;
 
 namespace Leetcode
 {
-    /*
-     * Test Cases: 473/983
-     */
-
     [TestClass]
     public class LongestSubstring
     {
         [TestMethod]
         public void TestMethod1()
         {
-            var sol = new LongestSubstringSolution();
-            sol.LengthOfLongestSubstring("aab");
+            var sol = new LongestSubstringSolution().LengthOfLongestSubstring("dvdf");
+            var result = sol;
         }
     }
 
@@ -24,38 +20,35 @@ namespace Leetcode
     {
         public int LengthOfLongestSubstring(string s)
         {
-            var count = 0;
-            var sub = string.Empty;
-            var lstString = new List<string>();
-            var i = 0;
-            while (i < s.Length)
+            var hash = new HashSet<char>();
+            var current = 0;
+            var next = current + 1;
+            var max = 0;
+            if (s.Equals(string.Empty))
+                return 0;
+            if (s.Length == 1)
+                return 1;
+
+            hash.Add(s[current]);
+            while (next < s.Length)
             {
-                if (!sub.Contains(char.ToString(s[i])))
+                if (hash.Contains(s[next]))
                 {
-                    sub += char.ToString(s[i]);
-                    i++;
-                    if (sub.Length > count)
-                        count = sub.Length;
-                }
-                else if (!lstString.Contains(sub))
-                {
-                    lstString.Add(sub);
-                    if (sub.Length > count)
-                        count = sub.Length;
-                    sub = string.Empty;
-                    i--;
+                    max = next > max ? next : max;
+                    s = s.Substring(++current);
+                    current = 0;
+                    next = current + 1;
+                    hash = new HashSet<char>();
+                    hash.Add(s[current]);
                 }
                 else
                 {
-                    sub += char.ToString(s[i]);
-                    lstString.Add(sub);
-                    if (sub.Length > count)
-                        count = sub.Length;
-                    i++;
-                    sub = string.Empty;
+                    hash.Add(s[next]);
+                    ++next;
                 }
             }
-            return count;
+            max = next > max ? next : max;
+            return max;
         }
         #endregion
     }

@@ -1,107 +1,68 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Text.RegularExpressions;
 
-namespace Leetcode
+namespace DataStructureConcepts.Leetcode
 {
     /*
-     * Test Cases: 358 / 445
-     */
-
-    /*
-    Implement regular expression matching with support for '.' and '*'.
-
-    '.' Matches any single character.
-    '*' Matches zero or more of the preceding element.
-
-    The matching should cover the entire input string (not partial).
-
-    The function prototype should be:
-    bool isMatch(const char* s, const char* p)
-
-    Some examples:
-    isMatch("aa","a") → false
-    isMatch("aa","aa") → true
-    isMatch("aaa","aa") → false
-    isMatch("aa", "a*") → true
-    isMatch("aa", ".*") → true
-    isMatch("ab", ".*") → true
-    isMatch("aab", "c*a*b") → true
-    */
-
+    * Test Cases: 362 / 445
+    */ 
     [TestClass]
     public class RegularExpressionMatching
     {
         [TestMethod]
         public void TestMethod1()
         {
-
+            var sol = new RegularExpressionMatchingSolution().IsMatch("aa", "a*");
+            var result = sol;
         }
     }
-    public static class RegularExpressionMatchingSolution
+    public class RegularExpressionMatchingSolution
     {
-        public static bool IsMatch(string s, string p)
+        public bool IsMatch(string s, string p)
         {
-            try
-            {
-                if (s.Equals(p))
-                    return true;
-                else if (s.Equals(string.Empty) || p.Equals(string.Empty))
-                    return false;
-                else if ((s.Length == 1 || p.Length == 1) && !s.Equals(p))
-                    return false;
-                else if (!p.Contains("*") && s.Length != p.Length)
-                    return false;
-                else if (p.Equals(".*"))
-                    return true;
-                else if (s[0].Equals(p[0]))
-                    return CompareValues(s, p, true);
-                else if (!s[0].Equals(p[0]))
-                    return CompareValues(s, p, false);
-            }
-            catch (Exception e)
-            {
-                throw;
-            }
-            return false;
+            if (s.Equals(string.Empty) && p.Equals(string.Empty))
+                return true;
+            if (s.Equals(string.Empty) || p.Equals(string.Empty))
+                return false;
+            if (s.Equals(p))
+                return true;
+            if (p.Equals(".*"))
+                return true;
+
+            return isValid(s, p, 0, 0);
         }
-        public static bool CompareValues(string s, string p, bool output)
+        public bool isValid(string s, string p, int m, int n)
         {
-            var sPos = 0;
-            var pPos = 0;
-            var pVal = '\0';
-            if (p.Length == 2 && p[++pPos].Equals('*'))
-                return output;
-            else
+            if (m >= s.Length && n >= p.Length)
+                return true;
+            if (m >= s.Length || n >= p.Length)
+                return false;
+            if (p[n] == '.')
+                return isValid(s, p, m + 1, n + 1);
+            if (s[m] == p[n])
             {
-                do
+                if (n < p.Length - 1 && p[n + 1] == '*')
                 {
-                    if (pPos < p.Length - 1)
-                    {
-                        pVal = p[pPos];
-                        pPos++;
-                    }
+                    while (m <= s.Length - 1 && s[m] == p[n])
+                        ++m;
+                    if (m == s.Length)
+                        return true;
                     else
-                        return output;
-                }
-                while (!p[pPos].Equals('*') && !p[pPos].Equals('.'));
-                if (pPos < p.Length)
-                {
-                    if (output == true)
-                    {
-                        while (s[sPos].Equals(pVal) && p[pPos].Equals('*'))
-                        {
-                            ++sPos;
-                            if (sPos == s.Length)
-                                return true;
-                        }
-                    }
-                    ++pPos;
-                    return IsMatch(s.Substring(sPos, s.Length - sPos), p.Substring(pPos, p.Length - pPos));
+                        return isValid(s, p, m, n + 2);
                 }
                 else
-                    return output;
+                    return isValid(s, p, m + 1, n + 1);
             }
+            if (s[m] != p[n])
+            {
+                if (n < p.Length - 1 && p[n + 1] == '*')
+                    return isValid(s, p, m + 1, n + 2);
+                if (n < p.Length - 1 && p[n + 1] == '.')
+                    return false;
+                else
+                    return false;
+            }
+            return isValid(s, p, m, n);
         }
     }
 }
