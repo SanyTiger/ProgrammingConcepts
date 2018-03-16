@@ -1,4 +1,4 @@
-# Awesome Leetcode Problem Solutions List in C#
+# Awesome Leetcode Solutions List in C#
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
 
