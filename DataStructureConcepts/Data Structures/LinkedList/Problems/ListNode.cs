@@ -1,4 +1,6 @@
-﻿namespace LinkedList
+﻿using System.Collections.Generic;
+
+namespace LinkedList
 {
     //Definition for singly-linked list.
     public class ListNode

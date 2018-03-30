@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System.Collections.Generic;
+using System.Linq;
 using System.Collections;
 
 namespace Leetcode
@@ -38,6 +39,7 @@ namespace Leetcode
     {
         public ListNode MergeKLists(ListNode[] lists)
         {
+            var h = new HashSet<int>();
             var hash = new List<ListNode>();
             var lstHead = new List<int>();
             var current = 0;

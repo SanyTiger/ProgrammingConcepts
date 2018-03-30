@@ -26,15 +26,17 @@ namespace MergeSort
         [TestMethod]
         public void TestMethod1()
         {
-            var m = new int[] { 1, 2 };
-            var n = new int[] { 3, 4 };
+            var m = new int[] { 2, 1 };
+            var n = new int[] { 4, 3 };
             var sol = new MedianOfTwoSortedArraysSolution().FindMedianSortedArrays(m, n);
+            var result = sol;
         }
     }
     public class MedianOfTwoSortedArraysSolution
     {
         public double FindMedianSortedArrays(int[] nums1, int[] nums2)
         {
+            
             var m = nums1.Length;
             var n = nums2.Length;
             var solution = 0.0;

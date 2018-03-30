@@ -13,8 +13,8 @@ namespace DataStructureConcepts.Leetcode
         [TestMethod]
         public void TestMethod1()
         {
-            var arrWords = new string[2] { "foo", "bar" };
-            var sol = new SubstringWithConcatOfAllWordsSolution().FindSubstring("barfoothefoobarman", arrWords);
+            var arrWords = new string[2] { "aa", "aa" };
+            var sol = new SubstringWithConcatOfAllWordsSolution().FindSubstring("aaa", arrWords); 
             var result = sol;
         }
     }
@@ -22,38 +22,51 @@ namespace DataStructureConcepts.Leetcode
     {
         public IList<int> FindSubstring(string s, string[] words)
         {
-            var strWord = string.Empty;
+            var hash = new HashSet<string>();
+            var lst = new List<int>();
             var pos = 0;
-            var isMatch = false;
-            var lstResult = new List<int>();
 
-            if (s.Length == 0 || words.Length == 0)
-                return lstResult;
+            if (s.Equals(string.Empty) || words.Length == 0)
+                return lst;
 
-            for (int i = 0; i < words.Length; i++)
-                strWord += words[i];
-            for (int i = 0; i < s.Length; i++)
+            foreach (var w in words)
+                hash.Add(w);
+
+            lst = getSubstring(s, hash, lst, words[0].Length, pos);
+            var len = lst.Count;
+            lst.RemoveAt(len - 1);
+            return lst;
+        }
+        public List<int> getSubstring(string s, HashSet<string> hash, List<int> lst, int len, int pos)
+        {
+            var tempHash = new HashSet<string>();
+            var tempPos = pos;
+            var subStringCount = 0;
+            lst.Add(pos);
+
+            while (pos < s.Length)
             {
-                if (lstResult.Count == 0)
-                    lstResult.Add(i);
-                else if (pos == strWord.Length && isMatch)
-                    break;
-                else if (s[i] == strWord[pos])
+                var str = s.Substring(pos, len);
+                if (subStringCount == hash.Count * len)
                 {
-                    if (lstResult.Count == 1)
-                        lstResult.Add(i);
-                    ++pos;
-                    isMatch = true;
+                    tempPos += len;
+                    return getSubstring(s, hash, lst, len, tempPos);
+                }
+                if (!tempHash.Contains(str) && hash.Contains(str))
+                {
+                    subStringCount += len;
+                    pos += len;
+                    tempHash.Add(str);
+                    continue;
                 }
                 else
                 {
-                    if (lstResult.Count == 2)
-                        lstResult.RemoveAt(1);
-                    pos = 0;
-                    isMatch = false;
+                    lst.Remove(tempPos);
+                    tempPos += len;
+                    return getSubstring(s, hash, lst, len, tempPos);
                 }
             }
-            return lstResult;
+            return lst;
         }
     }
 }

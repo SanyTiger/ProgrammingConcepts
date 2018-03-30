@@ -4,7 +4,7 @@ using Microsoft.VisualStudio.TestTools.UnitTesting;
 namespace DataStructureConcepts.Leetcode
 {
     /*
-    * Test Cases: 362 / 445
+    * Test Cases: 362/445
     */ 
     [TestClass]
     public class RegularExpressionMatching

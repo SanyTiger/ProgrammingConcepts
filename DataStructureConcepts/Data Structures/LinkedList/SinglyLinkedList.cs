@@ -14,7 +14,7 @@ namespace LinkedList
             lstLinked = SinglyLinkedListSolution.AddNumberToFirst(lstLinked, 0);
         }
     }
-    internal class SingleLinkedList
+    public class SingleLinkedList
     {
         public int value;
         public SingleLinkedList next;

@@ -1,98 +1,81 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-/*
-* Test Cases: 42/988
-*/
+
 namespace Leetcode
 {
     /*
-    Divide two integers without using multiplication, division and mod operator.
-
-    If it is overflow, return MAX_INT.
+     * Test Cases: 508/988
     */
 
     [TestClass]
-    public static class DivideTwoIntegers
+    public class DivideTwoIntegers
     {
         [TestMethod]
-        public static void TestMethod1()
+        public void TestMethod1()
         {
-
+            //var sol = new DivideTwoIntegerSolution().Divide(5, 3);
+            var sol = new DivideTwoIntegerBitManipulationSolution().Divide(-2147483648, 2);
+            var result = sol;
         }
     }
-    public static class DivideTwoIntegerSolution
+    public class DivideTwoIntegerSolution
     {
-        public static int Divide(int dividend, int divisor)
+        public int Divide(int dividend, int divisor)
         {
-            var d = divisor; ;
-            var count = 1;
-            while (divisor <= dividend)
+            if (divisor == 0)
+                return Int32.MaxValue;
+            if (dividend == 0)
+                return 0;
+            if (divisor < 0 && dividend < 0)
             {
-                divisor = divisor << 1; // 4
-                count = count << 1;
+                divisor = divisor <= Int32.MinValue ? Int32.MaxValue : -divisor;
+                dividend = dividend <= Int32.MinValue ? Int32.MaxValue : -dividend;
             }
-            divisor = divisor >> 1;
-            count = count >> 1;
-            var sum1 = dividend - divisor;
-            var sum2 = divisor - sum1;
-            var sum = sum1 + (sum2 / d);
-            try
-            {
-                var q = 0;
-                if (dividend > 0 && divisor > 0 && (divisor > dividend))
-                    return 0;
-
-                if ((dividend == int.MinValue && divisor == -1) || (dividend == int.MaxValue && divisor == 1))
-                    return int.MaxValue;
-                if ((dividend == int.MinValue && divisor == 1) || (dividend == int.MaxValue && divisor == -1))
-                    return int.MinValue;
-
-                if (dividend == int.MinValue || divisor == int.MinValue)
-                {
-                    if (dividend == int.MinValue)
-                        dividend = int.MaxValue;
-                    if (divisor == int.MinValue)
-                        divisor = int.MaxValue;
-                }
-
-                if (dividend == 0)
-                    return 0;
-
-                else if (divisor == 0)
-                    return int.MaxValue;
-
-                else if (dividend >= 0 && divisor >= 0)
-                    q = quotientAns(dividend, divisor);
-
-                else if (dividend < 0 && divisor < 0)
-                    q = quotientAns(-(dividend), -(divisor));
-
-                else if (dividend < 0)
-                {
-                    q = quotientAns(-(dividend), divisor);
-                    q = -q;
-                }
-                else if (divisor < 0)
-                {
-                    q = quotientAns(dividend, -(divisor));
-                    q = -q;
-                }
-                return q;
-            }
-            catch (Exception ex)
-            { throw; }
+            if (divisor == 1)
+                return dividend >= Int32.MaxValue ? Int32.MaxValue : dividend;
+            if (divisor > dividend)
+                return 0;
+            if (divisor == dividend)
+                return 1;
+            if (dividend % 2 == 0)
+                return 0;
+            if (divisor == 2)
+                return 1;
+            if (dividend < divisor)
+                return dividend >= Int32.MaxValue ? Int32.MaxValue : divisor - dividend;
+            return Divide(dividend - divisor, divisor);
         }
-        public static int quotientAns(int dividend, int divisor)
+    }
+    public class DivideTwoIntegerBitManipulationSolution
+    {
+        public int Divide(int dividend, int divisor)
         {
-            int count = 0;
-            var div = dividend;
-            while (dividend > 0)
+            //handle special cases
+            if (divisor == 0) return int.MaxValue;
+            if (divisor == -1 && dividend == int.MinValue)
+                return int.MaxValue;
+
+            //get positive values
+            long pDividend = Math.Abs((long)dividend);
+            long pDivisor = Math.Abs((long)divisor);
+
+            int result = 0;
+            while (pDividend >= pDivisor)
             {
-                var leftShift = dividend >> divisor;
-                dividend = leftShift;
-                count++;
+                //calculate number of left shifts
+                int numShift = 0;
+                while (pDividend >= (pDivisor << numShift))
+                    numShift++;
+
+                //dividend minus the largest shifted divisor
+                result += 1 << (numShift - 1);
+                pDividend -= (pDivisor << (numShift - 1));
             }
-            return div / count * divisor;
+
+            if ((dividend > 0 && divisor > 0) || (dividend < 0 && divisor < 0))
+                return result;
+            else
+                return -result;
         }
     }
 }
