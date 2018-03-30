@@ -1,6 +1,7 @@
 # Awesome Leetcode Solutions List in C#
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Build Status](https://travis-ci.org/SanyTiger/ProgrammingConcepts.svg?branch=master)](https://travis-ci.org/SanyTiger/ProgrammingConcepts)
 
 A curated list of awesome solutions to problems from [LeetCode.com](https://leetcode.com/problemset/all/) 
 Special thanks to [GeekForGeeks.com](https://www.geeksforgeeks.org/) for all the helpful videos and notes to solve these problems.
