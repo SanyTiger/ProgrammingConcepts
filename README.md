@@ -1,8 +1,8 @@
 # Awesome Leetcode Solutions List in C#
 
 [![Build Status](https://travis-ci.org/SanyTiger/ProgrammingConcepts.svg?branch=master)](https://travis-ci.org/SanyTiger/ProgrammingConcepts)
-[![HitCount](http://hits.dwyl.io/SanyTiger/ProgrammingConcepts.svg)](http://hits.dwyl.io/SanyTiger/ProgrammingConcepts)
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![HitCount](http://hits.dwyl.io/SanyTiger/ProgrammingConcepts.svg)](http://hits.dwyl.io/SanyTiger/ProgrammingConcepts)
 
 A curated list of awesome solutions to problems from [LeetCode.com](https://leetcode.com/problemset/all/) 
 Special thanks to [GeekForGeeks.com](https://www.geeksforgeeks.org/) for all the helpful videos and notes to solve these problems.
