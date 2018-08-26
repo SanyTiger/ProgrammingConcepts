@@ -1,5 +1,0 @@
-E:\#Career\Programming Concepts\DataStructureConcepts\DataStructureConcepts\bin\Debug\DataStructureConcepts.dll
-E:\#Career\Programming Concepts\DataStructureConcepts\DataStructureConcepts\bin\Debug\DataStructureConcepts.pdb
-E:\#Career\Programming Concepts\DataStructureConcepts\DataStructureConcepts\obj\Debug\DataStructureAlgorithmsConcepts.csprojResolveAssemblyReference.cache
-E:\#Career\Programming Concepts\DataStructureConcepts\DataStructureConcepts\obj\Debug\DataStructureConcepts.dll
-E:\#Career\Programming Concepts\DataStructureConcepts\DataStructureConcepts\obj\Debug\DataStructureConcepts.pdb
