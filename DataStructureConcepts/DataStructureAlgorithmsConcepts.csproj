@@ -1,0 +1,200 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0725743A-BCE9-452F-9EF9-E7285356EEF7}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataStructureConcepts</RootNamespace>
+    <AssemblyName>DataStructureConcepts</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+    <ReferencePath>$(ProgramFiles)\Common Files\microsoft shared\VSTT\$(VisualStudioVersion)\UITestExtensionPackages</ReferencePath>
+    <IsCodedUITest>False</IsCodedUITest>
+    <TestProjectType>UnitTest</TestProjectType>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="('$(VisualStudioVersion)' == '10.0' or '$(VisualStudioVersion)' == '') and '$(TargetFrameworkVersion)' == 'v3.5'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+      </ItemGroup>
+    </When>
+    <Otherwise>
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </Otherwise>
+  </Choose>
+  <ItemGroup>
+    <Compile Include="Algorithms\DynamicProgramming\EditDistance.cs" />
+    <Compile Include="Algorithms\DynamicProgramming\LongestPalindromeSubString.cs" />
+    <Compile Include="Algorithms\DynamicProgramming\LongestSubstring.cs" />
+    <Compile Include="Algorithms\SearchAndSort\Quick Sort\PositiveNegitiveSegregation.cs" />
+    <Compile Include="Data Structures\LinkedList\Problems\AddTwoNumbers.cs" />
+    <Compile Include="Data Structures\LinkedList\CircularLinkedList.cs" />
+    <Compile Include="Data Structures\LinkedList\DoublyLinkedList.cs" />
+    <Compile Include="Data Structures\LinkedList\Problems\ListNode.cs" />
+    <Compile Include="Data Structures\LinkedList\Problems\RemoveDuplicates.cs" />
+    <Compile Include="Data Structures\LinkedList\SinglyLinkedList.cs" />
+    <Compile Include="Algorithms\SearchAndSort\MergeSort\MedianOfTwoSortedArrays.cs" />
+    <Compile Include="Algorithms\SearchAndSort\MergeSort\MergeKSortedList.cs" />
+    <Compile Include="Data Structures\LinkedList\SkipList.cs" />
+    <Compile Include="Data Structures\Matrix\Problems\Visa.cs" />
+    <Compile Include="Data Structures\PointsToRemember.cs" />
+    <Compile Include="Algorithms\Recursion\RecursionClimbLeetcode.cs" />
+    <Compile Include="Algorithms\Recursion\RecursionStairsHackerrank.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\LargestPalindromeProduct.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\LetterComboPhone.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\LongestSubstring.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\RegularExpressionMatching.cs" />
+    <Compile Include="Data Structures\StringManipulation\Problems\StringToInt.cs" />
+    <Compile Include="Data Structures\Trie\TrieDataStructure.cs" />
+    <Compile Include="Hackerrank\Pairs.cs" />
+    <Compile Include="Hackerrank\PlusMinus.cs" />
+    <Compile Include="Hackerrank\Staircase.cs" />
+    <Compile Include="Leetcode\024_SwapNodesInPairs.cs" />
+    <Compile Include="Leetcode\025_ReverseNodesInKGroup.cs" />
+    <Compile Include="Leetcode\026_RemoveDuplicatesFromSortedArray.cs" />
+    <Compile Include="Leetcode\027_RemoveElement.cs" />
+    <Compile Include="Leetcode\032_LongestValidParentheses.cs" />
+    <Compile Include="Leetcode\033_SearchInRotatedSortedArray.cs" />
+    <Compile Include="Leetcode\034_SearchForARange.cs" />
+    <Compile Include="Leetcode\036_ValidSudoku.cs" />
+    <Compile Include="Leetcode\043_MultiplyStrings.cs" />
+    <Compile Include="Leetcode\054_SpiralMatrix.cs" />
+    <Compile Include="Leetcode\055_JumpGame.cs" />
+    <Compile Include="Leetcode\062_UniquePaths.cs" />
+    <Compile Include="Leetcode\094_BinaryTreeInorderTraversal.cs" />
+    <Compile Include="Leetcode\127_WordLadder.cs" />
+    <Compile Include="Leetcode\412_FizzBuzz.cs" />
+    <Compile Include="Leetcode\Adapt.cs" />
+    <Compile Include="Leetcode\AddingBinaryNumbers.cs" />
+    <Compile Include="Leetcode\002_AddTwoNumbers.cs" />
+    <Compile Include="Leetcode\BestPathAcrossMatrix.cs" />
+    <Compile Include="Leetcode\BreadthFirstSearch.cs" />
+    <Compile Include="Leetcode\ClimbStairs.cs" />
+    <Compile Include="Leetcode\CoinChangeII.cs" />
+    <Compile Include="Leetcode\011_ContainerWithMostWater.cs" />
+    <Compile Include="Leetcode\CompareListOfWordsWithSentence.cs" />
+    <Compile Include="Leetcode\CourseSchedule.cs" />
+    <Compile Include="Leetcode\GetAllPermutationsOfWordsGivenCharacters.cs" />
+    <Compile Include="Leetcode\GraphNode.cs" />
+    <Compile Include="Leetcode\012_IntToRoman.cs" />
+    <Compile Include="Leetcode\InvertBinaryTree.cs" />
+    <Compile Include="Leetcode\InvestmentChoices.cs" />
+    <Compile Include="Leetcode\JumpGameII.cs" />
+    <Compile Include="Leetcode\LargestPalindromeProduct.cs" />
+    <Compile Include="Leetcode\017_LetterCombinationsOfAPhoneNumber.cs" />
+    <Compile Include="Leetcode\005_LongestPalindromeSubstring.cs" />
+    <Compile Include="Leetcode\003_LongestSubstringWithoutRepeatingCharacters.cs" />
+    <Compile Include="Leetcode\LRUCache.cs" />
+    <Compile Include="Leetcode\004_MedianOfTwoSortedArrays.cs" />
+    <Compile Include="Leetcode\023_MergeKSortedList.cs" />
+    <Compile Include="Leetcode\MergeSortedArray.cs" />
+    <Compile Include="Leetcode\MergeTwoBinaryTrees.cs" />
+    <Compile Include="Leetcode\021_MergeTwoSortedLists.cs" />
+    <Compile Include="Leetcode\NearestPalindromic.cs" />
+    <Compile Include="Leetcode\NextPermutation.cs" />
+    <Compile Include="Leetcode\051_NQueens.cs" />
+    <Compile Include="Leetcode\009_PalindromeNumber.cs" />
+    <Compile Include="Leetcode\PositiveNegitiveSegregation.cs" />
+    <Compile Include="Leetcode\PowXN.cs" />
+    <Compile Include="Leetcode\RecurringCharacter.cs" />
+    <Compile Include="Leetcode\010_RegularExpressionMatching.cs" />
+    <Compile Include="Leetcode\019_RemoveNthNodeFromEndOfList.cs" />
+    <Compile Include="Leetcode\ReverseAString.cs" />
+    <Compile Include="Leetcode\ReverseAStringUsingTrie.cs" />
+    <Compile Include="Leetcode\007_ReverseInteger.cs" />
+    <Compile Include="Leetcode\013_RomanTolnt.cs" />
+    <Compile Include="Leetcode\Search2DMatrix.cs" />
+    <Compile Include="Leetcode\ShortestDistanceBetweenTwoPointsInMatrix.cs" />
+    <Compile Include="Leetcode\SinglyLinkedList.cs" />
+    <Compile Include="Leetcode\008_StringToInt.cs" />
+    <Compile Include="Leetcode\030_SubstringWithConcatenationOfAllWords.cs" />
+    <Compile Include="Leetcode\015_3Sum.cs" />
+    <Compile Include="Leetcode\SortFiveNumbersInLinearTime.cs" />
+    <Compile Include="Leetcode\TreeNode.cs" />
+    <Compile Include="Leetcode\001_TwoSum.cs" />
+    <Compile Include="Leetcode\029_DivideTwoIntegers.cs" />
+    <Compile Include="Leetcode\EditDistance.cs" />
+    <Compile Include="Leetcode\020_ValidParentheses.cs" />
+    <Compile Include="Leetcode\ValidNumber.cs" />
+    <Compile Include="Leetcode\006_ZigZagConversion.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Algorithms\DynamicProgramming\EditDistance.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Algorithms\Backtracking\" />
+    <Folder Include="Algorithms\BitManipulation\" />
+    <Folder Include="Algorithms\DivideAndConquer\" />
+    <Folder Include="Algorithms\Geometric\" />
+    <Folder Include="Algorithms\Greedy\" />
+    <Folder Include="Algorithms\Mathematical\" />
+    <Folder Include="Algorithms\PatternSearching\" />
+    <Folder Include="Data Structures\Array\Problems\" />
+    <Folder Include="Data Structures\BinarySearchTree\Problems\" />
+    <Folder Include="Data Structures\BinaryTree\Problems\" />
+    <Folder Include="Data Structures\Graph\Problems\" />
+    <Folder Include="Data Structures\Hashing\Problems\" />
+    <Folder Include="Data Structures\Heap\Problems\" />
+    <Folder Include="Data Structures\n-aryTreeAndLCA\Problems\" />
+    <Folder Include="Data Structures\Queue\Problems\" />
+    <Folder Include="Data Structures\Stack\Problems\" />
+    <Folder Include="Data Structures\Trie\Problems\" />
+  </ItemGroup>
+  <Choose>
+    <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
+      <ItemGroup>
+        <Reference Include="Microsoft.VisualStudio.QualityTools.CodedUITestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITest.Extension, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+        <Reference Include="Microsoft.VisualStudio.TestTools.UITesting, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+          <Private>False</Private>
+        </Reference>
+      </ItemGroup>
+    </When>
+  </Choose>
+  <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
